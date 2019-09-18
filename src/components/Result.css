@@ -1,0 +1,18 @@
+.result {
+  max-width: 400px;
+  margin-left: 30px;
+  margin-right: 40px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #ddd;
+  font-family: arial;
+}
+
+.result h3,
+.result h4 {
+  font-weight: normal;
+}
+
+.result em {
+  font-weight: bold;
+}

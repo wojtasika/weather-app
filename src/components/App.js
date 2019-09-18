@@ -45,15 +45,17 @@ class App extends Component {
           sunrise: data.sys.sunrise,
           sunset: data.sys.sunset,
           temp: data.main.temp,
+          tempmin: data.main.temp_min,
+          tempmax: data.main.temp_max,
           pressure: data.main.pressure,
           wind: data.wind.speed,
         }))
       })
       .catch(err => {
         console.log(err)
-        this.setState(state => ({
+        this.setState(prevState => ({
           err: true,
-          city: this.state.value
+          city: prevState.value
         }))
       })
   }
